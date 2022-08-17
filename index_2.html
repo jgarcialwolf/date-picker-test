@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- library css-->
+  <link rel="stylesheet" href="./bootstrap-datetimepicker.min.css">
+
+  <script src="./moment.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <!-- library js-->
+  <script src="./bootstrap-datetimepicker.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="pb-form__section-forms">
+    <div class="row">
+      <div class="custom_field col-md-6">
+        <div class="form-group"><label>Move in Date After</label>
+          <div class="input-group  date" id="custom_fields_select" data-datetimepicker-format="YYYY-MM-DD">
+            <input placeholder="YYYY-MM-DD" class="date_select form-control form-control--date-picker" id="field_86f9f943bb0b5901fdd7_min" name="marketing_list[lead_search_attributes][custom_fields][field_86f9f943bb0b5901fdd7][min]" type="text">
+            <span class="form-control--date-picker-icon input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="custom_field col-md-6">
+        <div class="form-group"><label>Move in Date Before</label>
+          <div class="input-group  date" id="custom_fields_select" data-datetimepicker-format="MMMM D">
+            <input value="2022-08-07" placeholder="YYYY-MM-DD" class="date_select form-control form-control--date-picker" id="field_86f9f943bb0b5901fdd7_max" name="marketing_list[lead_search_attributes][custom_fields][field_86f9f943bb0b5901fdd7][max]" type="text">
+            <span class="form-control--date-picker-icon input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    $( document ).ready(function() {
+      $('#field_86f9f943bb0b5901fdd7_max').datetimepicker({
+        format: 'YYYY MMMM DD'
+      });
+      console.log( "ready!" );
+    });
+ </script>
+</body>
+</html>
